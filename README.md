@@ -12,6 +12,6 @@ I also used Sass, Flexbox, and [React-View-Slider](https://github.com/jcoreio/re
 
 For simplicity, I put breakpoints at 950px and 650px. In the future, these breakpoints can be updated so they cover more devices. 
 
-#Deployment
+## Deployment
 The project is deployed [here](http://dain-chatel-wethos-challenge.bitballoon.com/).
 
