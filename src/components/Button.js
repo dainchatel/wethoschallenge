@@ -1,13 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 
 export default class Button extends Component {
-    // static propTypes = {
-    //     text: PropTypes.string,
-    // };
 
-    constructor(props) {
-        super(props);
-    }
+    // this is the button class
+    // it takes one or two props, "text" & "black"
+    // text tells the button what text to have
+    // black tells it whether or not it's on a dark background (so it can have white font and outline)
 
     render() {
         return (

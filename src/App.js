@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+// the viewslider library was really useful (https://github.com/jcoreio/react-view-slider)
 import ViewSlider from 'react-view-slider';
 import Button from './components/Button.js';
 
@@ -9,6 +10,9 @@ export default class App extends Component {
     this.state = {
       view: 0
     }
+
+// binding all the external methods so I can call them from within a render
+
     this.changeView0 = this.changeView0.bind(this);
     this.changeView1 = this.changeView1.bind(this);
     this.changeView2 = this.changeView2.bind(this);
@@ -16,6 +20,9 @@ export default class App extends Component {
     this.changeView4 = this.changeView4.bind(this);
     this.renderView = this.renderView.bind(this);
   }
+
+// these are the functions that change the state associated with the slider's current view
+// they need a quick refactor for DRY-ness, but as they are now they can be called from anywhere
 
   changeView0() {
     this.setState({view: 0});
@@ -37,8 +44,15 @@ export default class App extends Component {
     this.setState({view: 4});
   }
 
+// this is the function from react-view-slider
+// it's called when the page needs to render a different slide
+// it checks to see which index it is, then returns a jsx packet with that slide's dom nodes
+
 
   renderView({index, key, ref, style, className, active, transitionState}) {
+
+// first slide
+
     if (index === 0) {
       return (
         <div key={key} ref={ref} style={style}>
@@ -76,6 +90,9 @@ export default class App extends Component {
             </div>
           </div>
         </div>
+
+// second slide
+
       )} else if (index === 1) {
       return (
         <div key={key} ref={ref} style={style} className={className}>
@@ -118,6 +135,9 @@ export default class App extends Component {
             <img src={"./assets/bgimages/Pencils.png"} alt='pencils' />
           </div>
         </div>
+
+// third slide
+
       )} else if (index === 2) {
       return (
         <div key={key} ref={ref} style={style} className={className}>
@@ -153,6 +173,9 @@ export default class App extends Component {
             <img src={"./assets/bgimages/Map_Camera.png"} alt='map camera' />
           </div>
         </div>
+
+// fourth slide
+
       )} else if (index === 3) {
       return (
         <div key={key} ref={ref} style={style} className={className}>
@@ -189,6 +212,9 @@ export default class App extends Component {
             <img src={"./assets/bgimages/plants.png"} alt='plants' />
           </div>
         </div>
+
+// fifth slide
+
       )} else if (index === 4) {
       return (
         <div key={key} ref={ref} style={style} className={className}>
@@ -225,6 +251,9 @@ export default class App extends Component {
       )}
   }
 
+// after that, any complex functionality is taken care of
+// for the purposes of this exercise, buttons and links don't do anything
+// the rest of the work was a lot of jsx and scss
 
 
   render() {
