@@ -496,8 +496,7 @@ footer {
         width: 24rem;
         height: 15rem; }
     .content-3 div .laptop {
-      padding: 0 0 2rem 0;
-      margin-left: 2rem; }
+      padding: 0 0 2rem 0; }
   .content-5 div div img {
     width: 5rem;
     height: 3rem;
@@ -567,13 +566,14 @@ footer {
         width: 100%; }
         .slide-1 .photoset div div img {
           max-height: 467px; }
+        .slide-1 .photoset div div div h2 {
+          color: transparent; }
   .slide-2 h1 {
     font-size: 1.8rem; }
   .slide-2 p {
     width: 80%; }
   .slide-2 section div {
-    padding-left: 5px;
-    margin-top: 10px; }
+    padding-left: 5px; }
     .slide-2 section div p {
       font-size: .4rem; }
   .slide-2 section > :first-child {

@@ -621,7 +621,6 @@ footer {
       }
       .laptop {
         padding: 0 0 2rem 0;
-        margin-left: 2rem;
       }
     }
 
@@ -719,6 +718,9 @@ footer {
           img {
             max-height: 467px;
           }
+          div h2 {
+            color: transparent;
+          }
         }
       }
     }
@@ -732,7 +734,6 @@ footer {
     }
     section div {
       padding-left: 5px;
-      margin-top: 10px;
       p {
         font-size: .4rem;
       }
