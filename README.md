@@ -1,7 +1,7 @@
-## Wethos Front End Code Challenge
-# Dain Chatel
+# Wethos Front End Code Challenge
+## Dain Chatel
 
-#Process
+## Process
 I used Create-React-App to bootstrap a new React project, then recreated a layout with specific assets. 
 
 The final layout reflects a compromise between the assets that were provided (font, new logo) and the desired layout. The header fonts have been updated, and the highlight color has been changed from red to purple, to more closely match the new logo. Since it's attached to a SCSS variable, the color can quickly be changed throughout the document. 
